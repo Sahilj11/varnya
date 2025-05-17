@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varyna Wellness</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="./assets/Varnya Wellness_Fevicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-backColor">
+    <nav
+        class="flex justify-between h-10 bg-backColor items-center fixed lg:text-xl w-screen lg:px-20 md:px-10 z-20 font-bold">
+        <div class="ml-5">
+            <svg width="100%" viewBox="0 0 579 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M131.858 6.31647C128.475 6.87335 127.969 7.57773 126.152 11.9214C124.586 15.8105 119.184 29.4948 115.395 39.2929H114.688C111.356 29.8981 107.922 20.4552 104.59 11.214C103.176 7.2737 102.469 6.87034 99.188 6.31647V5.71143H111.004V6.31647C107.621 6.97269 107.218 7.52957 107.823 9.44705C109.084 13.3362 115.193 29.7988 116.457 33.1311C118.477 27.9807 122.417 17.3247 124.737 10.8107C125.848 7.73125 125.796 6.97269 121.252 6.31647V5.71143H131.855V6.31647H131.858Z"
+                    fill="#A54747" />
+                <path
+                    d="M146.199 38.5372V37.9321C148.977 37.4264 149.732 37.0231 149.127 35.2049C148.471 33.0346 147.207 29.3471 145.693 25.154H135.545C134.434 28.3869 133.474 30.9606 132.716 33.3868C131.605 36.8214 132.363 37.1736 136.201 37.9321V38.5372H125.649V37.9321C128.475 37.4264 129.336 37.0742 131.202 32.3272L141.705 5.10625L142.413 5.00391C145.543 14.194 148.826 23.4382 152.209 32.8299C153.774 37.2248 154.379 37.2248 157.56 37.9291V38.5342H146.199V38.5372ZM140.745 10.8105C139.129 15.103 137.615 19.4979 136.05 23.688H145.239L140.745 10.8105Z"
+                    fill="#A54747" />
+                <path
+                    d="M188.16 38.7902C187.756 38.7902 186.543 38.7902 186.191 38.739C181.951 38.4861 180.939 37.9804 178.92 35.2532C177.253 32.9294 174.83 28.8897 173.063 25.8585C171.751 23.637 171.194 23.333 168.621 23.333H166.499V32.9294C166.499 36.8185 166.902 37.3724 170.941 37.9293V38.5343H158.521V37.9293C162.46 37.3242 162.915 36.9178 162.915 32.9294V11.214C162.915 7.32488 162.562 6.92152 158.521 6.31647V5.71143H170.589C174.023 5.71143 176.75 6.2683 178.568 7.58074C180.386 8.79384 181.647 11.0665 181.647 13.7937C181.647 17.9357 178.869 20.8134 175.185 22.4299C176.145 24.1457 178.469 27.9837 179.982 30.2563C181.698 32.8812 183.013 34.8017 184.172 36.0629C185.433 37.4266 186.294 37.8299 188.313 38.1851L188.16 38.7902ZM169.578 22.3276C172.103 22.3276 173.518 22.2252 174.929 21.2168C176.949 19.802 177.605 17.731 177.605 14.7028C177.605 9.1972 174.574 6.72284 170.282 6.72284C168.413 6.72284 167.504 6.92452 167.101 7.17738C166.647 7.4814 166.496 7.93594 166.496 9.5524V22.3306H169.578V22.3276Z"
+                    fill="#A54747" />
+                <path
+                    d="M221.991 6.31656C218.406 7.12328 218.103 7.73133 218.003 11.1659C217.952 12.4784 217.853 13.3874 217.853 17.7823V39.0943H217.046L194.374 11.1659V25.6599C194.374 30.5093 194.477 32.0746 194.525 33.691C194.624 36.6199 195.434 37.2761 199.373 37.9324V38.5374H187.961V37.9324C191.699 37.0745 192.505 36.6199 192.605 33.6398C192.656 32.3274 192.755 30.4581 192.755 25.6599V10.7114C192.755 9.80232 192.554 9.19728 192.048 8.58923C190.835 7.07511 189.321 6.66875 187.452 6.31656V5.71151H194.522L216.285 32.1227V17.7793C216.285 13.3844 216.234 12.68 216.134 10.9612C215.933 7.72832 215.276 6.81925 211.084 6.31354V5.7085H221.991V6.31656Z"
+                    fill="#A54747" />
+                <path
+                    d="M252.539 6.31639C249.054 6.8221 248.753 7.73116 247.441 9.95267C244.865 14.4468 242.845 18.1855 240.067 23.6399C239.814 24.1456 239.664 24.7507 239.664 25.4069L239.613 32.9323C239.562 36.8726 239.965 37.276 244.257 37.9322V38.5372H231.532V37.9322C235.721 37.276 235.974 36.8214 235.974 32.9323V25.6597C235.974 24.9012 235.824 24.3985 235.369 23.4894C234.764 22.1258 230.521 13.893 228.805 10.8136C226.786 7.12613 226.382 6.72276 223.352 6.31939V5.71436H234.409V6.31939C230.975 6.77393 231.125 7.48132 231.785 8.84493C234.156 13.4926 237.843 20.4612 239.056 22.8332C240.621 19.8019 244.257 12.7341 245.62 9.754C246.679 7.53249 246.529 6.92444 242.692 6.31939V5.71436H252.536V6.31639H252.539Z"
+                    fill="#A54747" />
+                <path
+                    d="M267.636 38.5372V37.9321C270.414 37.4264 271.169 37.0231 270.564 35.2049C269.908 33.0346 268.644 29.3471 267.13 25.154H256.981C255.871 28.3869 254.911 30.9606 254.152 33.3868C253.042 36.8214 253.8 37.1736 257.638 37.9321V38.5372H247.086V37.9321C249.915 37.4264 250.773 37.0742 252.642 32.3272L263.145 5.10625L263.853 5.00391C266.983 14.194 270.266 23.4382 273.649 32.8299C275.214 37.2248 275.819 37.2248 279 37.9291V38.5342H267.636V38.5372ZM262.182 10.8105C260.566 15.103 259.052 19.4979 257.487 23.688H266.676L262.182 10.8105Z"
+                    fill="#A54747" />
+                <path
+                    d="M11.5044 11.1899V28.1071C11.5044 28.1071 10.3637 45.7918 26.7122 45.7918C43.0607 45.7918 60.5468 45.7918 60.5468 45.7918C60.5468 45.7918 77.2745 45.7918 77.2745 28.4924C77.2745 11.1929 77.2745 11.1929 77.2745 11.1929"
+                    stroke="#A54747" stroke-width="3" stroke-miterlimit="10" />
+                <path
+                    d="M44.379 36.665V54.5364H27.4707C27.4707 54.5364 2 55.2979 2 30.2022C2 5.10639 2 2.06613 2 2.06613H19.1069C19.1069 2.06613 44.9779 0.545989 44.0179 31.7253C44.0179 -0.624966 77.2716 2.05409 77.2716 2.05409"
+                    stroke="#A54747" stroke-width="3" stroke-miterlimit="10" />
+                <path
+                    d="M44.379 7.69195C45.6805 7.69195 46.7356 6.63671 46.7356 5.33499C46.7356 4.03328 45.6805 2.97803 44.379 2.97803C43.0775 2.97803 42.0225 4.03328 42.0225 5.33499C42.0225 6.63671 43.0775 7.69195 44.379 7.69195Z"
+                    fill="#A54747" />
+                <path
+                    d="M137.606 54.8792L135.536 46.7217H136.649L137.618 50.8486C137.859 51.8661 138.079 52.8805 138.223 53.6692H138.247C138.38 52.8594 138.636 51.8901 138.912 50.8366L140.002 46.7217H141.104L142.097 50.8607C142.325 51.8299 142.545 52.7962 142.666 53.6571H142.69C142.858 52.7601 143.09 51.854 143.343 50.8366L144.42 46.7217H145.498L143.186 54.8792H142.085L141.055 50.6319C140.803 49.5904 140.631 48.7927 140.523 47.9679H140.499C140.354 48.7776 140.171 49.5783 139.87 50.6319L138.708 54.8792H137.606Z"
+                    fill="#A54747" />
+                <path
+                    d="M158.43 51.0533H155.261V53.9942H158.794V54.8792H154.208V46.7217H158.614V47.6067H155.261V50.1834H158.43V51.0533Z"
+                    fill="#A54747" />
+                <path d="M167.853 46.7217H168.907V53.9942H172.392V54.8792H167.853V46.7217Z" fill="#A54747" />
+                <path d="M181.261 46.7217H182.315V53.9942H185.8V54.8792H181.261V46.7217Z" fill="#A54747" />
+                <path
+                    d="M194.667 54.8792V46.7217H195.816L198.432 50.8486C199.037 51.8059 199.509 52.6638 199.894 53.5006L199.918 53.4885C199.822 52.3989 199.798 51.4055 199.798 50.1352V46.7217H200.791V54.8792H199.726L197.137 50.7403C196.569 49.8312 196.024 48.901 195.612 48.0161L195.575 48.0281C195.636 49.0576 195.66 50.0359 195.66 51.3935V54.8792H194.667Z"
+                    fill="#A54747" />
+                <path
+                    d="M214.548 51.0533H211.379V53.9942H214.912V54.8792H210.326V46.7217H214.732V47.6067H211.379V50.1834H214.548V51.0533Z"
+                    fill="#A54747" />
+                <path
+                    d="M223.827 53.597C224.3 53.886 224.989 54.1298 225.714 54.1298C226.792 54.1298 227.421 53.5609 227.421 52.7391C227.421 51.9776 226.984 51.5411 225.883 51.1167C224.552 50.6441 223.728 49.9547 223.728 48.8048C223.728 47.5346 224.781 46.5894 226.364 46.5894C227.198 46.5894 227.806 46.782 228.167 46.9897L227.878 47.8476C227.613 47.7031 227.068 47.4593 226.328 47.4593C225.214 47.4593 224.79 48.1245 224.79 48.6814C224.79 49.443 225.287 49.8193 226.412 50.2557C227.791 50.7885 228.495 51.4538 228.495 52.6518C228.495 53.9101 227.562 54.9998 225.639 54.9998C224.853 54.9998 223.993 54.771 223.556 54.479L223.827 53.597Z"
+                    fill="#A54747" />
+                <path
+                    d="M237.488 53.597C237.96 53.886 238.65 54.1298 239.375 54.1298C240.452 54.1298 241.081 53.5609 241.081 52.7391C241.081 51.9776 240.645 51.5411 239.544 51.1167C238.213 50.6441 237.389 49.9547 237.389 48.8048C237.389 47.5346 238.442 46.5894 240.025 46.5894C240.859 46.5894 241.467 46.782 241.828 46.9897L241.539 47.8476C241.274 47.7031 240.729 47.4593 239.989 47.4593C238.875 47.4593 238.451 48.1245 238.451 48.6814C238.451 49.443 238.948 49.8193 240.073 50.2557C241.452 50.7885 242.156 51.4538 242.156 52.6518C242.156 53.9101 241.223 54.9998 239.3 54.9998C238.514 54.9998 237.653 54.771 237.217 54.479L237.488 53.597Z"
+                    fill="#A54747" />
+            </svg>
+        </div>
+        <button class="md:hidden mr-7 md:mr-0" type="button" id="mobile-menu">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#A54747"
+                viewBox="0 0 17 14">
+                <path stroke="#A54747" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </button>
+        <div class="fixed top-7 w-screen right-1 md:hidden hidden pl-10" id="navbar-hamburger">
+            <ul class="flex flex-col font-medium mt-4 rounded-lg bg-primary">
+                <li>
+                    <a href="#service-provided"
+                        class="block py-2 px-3 text-white rounded hover:bg-secondary">Services</a>
+                </li>
+                <li>
+                    <a href="#first-team" class="block py-2 px-3 text-white rounded hover:bg-secondary">About us</a>
+                </li>
+                <li>
+                    <a href="#enquiry-footer" class="block py-2 px-3 text-white rounded hover:bg-secondary">Enquiry</a>
+                </li>
+            </ul>
+        </div>
+        <div class="justify-between w-2/4 hidden md:flex">
+            <a href="#service-provided" class="link-primary link-hover"><span class="cursor-pointer">Services</span></a>
+            <a href="#first-team" class="link-primary link-hover"><span class="cursor-pointer">About us</span></a>
+            <a href="#enquiry-footer" class="link-primary link-hover"><span class="cursor-pointer">Enquiry</span></a>
+        </div>
+    </nav>
+    <div class="bg-no-repeat bg-cover h-screen flex flex-col items-center justify-center relative overflow-hidden bg-backColor" style="background-image: url('./assets/bg_hero_blur.jpeg');">
+        <div class="flex-col items-center justify-center">
+            <div class="flex flex-col items-center mb-7">
+                <h1 class="font-bold  text-3xl md:text-5xl xl:text-7xl text-center" style="color: #ffffff;">
+                    Your Journey to Wellness
+                </h1>
+                <h1 class="font-bold text-backColor text-3xl md:text-5xl xl:text-7xl drop-shadow-4xl">
+                    Begins with Varnya
+                </h1>
+            </div>
+            <div>
+                <p class="text-gray-300 text-sm sm:text-lg md:text-xl xl:text-2xl contrast-200 text-center">
+                    Transform your health with authentic Ayurvedic treatments tailored
+                    to your unique needs.
+                </p>
+            </div>
+        </div>
+        <div class="m-10 w-96 flex justify-center gap-4">
+            <button
+                class="btn btn-primary text-white rounded-none hover:underline btn-xs sm:btn-sm md:btn-md lg:btn-md">
+                <span class="drop-shadow-md text-xs sm:text-sm md:text-lg lg:text-lg"><a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSevmnsOejrHR-9r5wLwplQEbUauCk_QccxIH0_GN9y1H9OTWA/viewform"
+                        target="_blank">Book A Slot</a></span>
+            </button>
+            <button class="btn btn-primary text-white rounded-none hover:underline btn-xs sm:btn-sm md:btn-md lg:btn-md"
+                onclick="my_modal_5.showModal()">
+                <span class="drop-shadow-md text-xs sm:text-sm md:text-lg lg:text-lg">Take A Tour</span>
+            </button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="h-full w-full relative">
+                    <video autoplay muted loop id="background-video"
+                        class="absolute top-2/4 left-2/4 w-full h-full md:object-fill object-cover">
+                        <source src="assets/bgvideo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <button class="btn bg-primary text-white border-none mr-10">
+                                Close
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+    </div>
+    <div>
+        <h1
+            class="my-8 text-4xl font-extrabold leading-none tracking-tight md:text-3xl lg:text-5xl text-primary text-center">
+            Services Provided
+        </h1>
+    </div>
+    <section class="flex justify-center flex-wrap gap-8 mx-4" id="service-provided">
+        <div class="max-w-sm bg-primary border rounded-lg shadow text-center flex items-center">
+            <div class="p-5 ">
+                <a href="#">
+                    <img class="max-h-96 w-full object-cover" src="./assets/clinical_costemology.jpeg"
+                        alt="Clinical Cosmetology" />
+                </a>
+                <a href="#">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Clinical Cosmetology
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-white">
+                    Clinical cosmetology focuses on advanced skin treatments, including
+                    laser therapy, chemical peels, and microdermabrasion, to address
+                    various skin concerns and enhance overall appearance.
+                </p>
+                <div>
+                    <button
+                        class="btn btn-primary text-white rounded-none hover:underline btn-xs sm:btn-sm md:btn-md lg:btn-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-sm bg-primary border rounded-lg shadow text-center flex items-center">
+            <div class="p-5">
+                <a href="#">
+                    <img class="max-h-96 w-full object-cover" src="./assets/medicene.jpeg" alt="Clinical Cosmetology" />
+                </a>
+                <a href="#">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        Preventive Ayurveda and HandMade Medicines
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-white">
+                    Preventive Ayurveda emphasizes holistic health through natural
+                    remedies, lifestyle changes, and personalized treatments to prevent
+                    diseases and promote well-being.
+                </p>
+                <div>
+                    <button
+                        class="btn btn-primary text-white rounded-none hover:underline btn-xs sm:btn-sm md:btn-md lg:btn-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-sm bg-primary border rounded-lg shadow text-center flex items-center">
+            <div class="p-5">
+                <a href="#">
+                    <img class="max-h-96 w-full object-cover" src="./assets/panch_treat.jpeg" alt="Clinical Cosmetology" />
+                </a>
+                <a href="#">
+                    <h5 class="mb-2 text-xl font-bold tracking-tight text-white">
+                        Panchkarma
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-white">
+                    Panchakarma is a traditional Ayurvedic detoxification and
+                    rejuvenation therapy that involves five therapeutic procedures to
+                    cleanse the body, balance doshas, and promote overall health.
+                </p>
+                <div>
+                    <button
+                        class="btn btn-primary text-white rounded-none hover:underline btn-xs sm:btn-sm md:btn-md lg:btn-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div
+        class="my-8 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-primary text-center">
+        <h1 class="my-7">Some Amazing Results</h1>
+    </div>
+    <section>
+        <div class="diff aspect-[16/9] md:w-1/2 md:mx-auto p-5">
+            <div class="diff-item-1">
+                <img src="./assets/beforehand.jpeg" alt="" class="object-center" />
+            </div>
+            <div class="diff-item-2">
+                <img src="./assets/afterhand.jpeg" alt="" class="object-cover" />
+            </div>
+            <div class="diff-resizer"></div>
+        </div>
+        <div class="diff aspect-[16/9] md:w-1/2 md:mx-auto p-5">
+            <div class="diff-item-1">
+                <img src="./assets/facebeforehide.jpg" alt="" class="object-cover" />
+            </div>
+            <div class="diff-item-2">
+                <img src="./assets/afterfacehide.jpg" alt="" class="object-cover" />
+            </div>
+            <div class="diff-resizer"></div>
+        </div>
+        <div class="diff aspect-[16/9] md:w-1/2 md:mx-auto p-5">
+            <div class="diff-item-1">
+                <img src="./assets/boyafterhide.jpg" alt="" class="object-cover" />
+            </div>
+            <div class="diff-item-2">
+                <img src="./assets/boybeforehide.jpg" alt="" class="object-cover" />
+            </div>
+            <div class="diff-resizer"></div>
+        </div>
+    </section>
+    <div class="text-6xl text-primary text-center my-7">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-primary">
+            Testimonials
+        </h1>
+    </div>
+    <div class="swiper mySwiper bg-primary">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <section class="bg-primary">
+                    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                        <div class="avatar">
+                            <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+                                <img src="./assets/Olivia_review.jpeg" />
+                            </div>
+                        </div>
+                        <figure class="max-w-screen-md mx-auto">
+                            <blockquote>
+                                <p class="text-2xl font-medium text-white">
+                                    "Excellent services at Varnya. Dr. Rajan and his staff are
+                                    very professional, warm and kind.Thank you for the super
+                                    sessions."
+                                </p>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                <div class="flex items-center divide-x-2 divide-white">
+                                    <div class="pr-3 font-medium text-white">Olivia</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section class="bg-primary">
+                    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                        <div class="avatar">
+                            <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+                                <img src="./assets/romet_review.jpeg" />
+                            </div>
+                        </div>
+                        <figure class="max-w-screen-md mx-auto">
+                            <blockquote>
+                                <p class="text-2xl font-medium text-white">
+                                    "Super sweet and caring staff! Highly reccomend anyone with
+                                    a skin issue to give them a visit!"
+                                </p>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                <div class="flex items-center divide-x-2 divide-white">
+                                    <div class="pr-3 font-medium text-white">Romet</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section class="bg-primary">
+                    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                        <div class="avatar">
+                            <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+                                <img src="./assets/kiran_review.jpeg" />
+                            </div>
+                        </div>
+                        <figure class="max-w-screen-md mx-auto">
+                            <blockquote>
+                                <p class="text-2xl font-medium text-white">
+                                    "Visited Varnya Wellness for a Panchkarma session, and it
+                                    was incredibly rejuvenating."
+                                </p>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                <div class="flex items-center divide-x-2 divide-white">
+                                    <div class="pr-3 font-medium text-white">Kirandeep</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section class="bg-primary">
+                    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                        <div class="avatar">
+                            <div class="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+                                <img src="./assets/ritu_review.jpeg" />
+                            </div>
+                        </div>
+                        <figure class="max-w-screen-md mx-auto">
+                            <blockquote>
+                                <p class="text-xl font-medium text-white">
+                                    "Life-changing experience with Dr. Ayushi and Dr. Rajan at
+                                    Varnya Wellness. Panchkarma cured my PCOD, acne, and weight
+                                    issues."
+                                </p>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center mt-6 space-x-3">
+                                <div class="flex items-center divide-x-2 divide-white">
+                                    <div class="pr-3 font-medium text-white">Ritu Sheroan</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div>
+        <p class="text-3xl text-primary text-center">
+            <a href="https://g.co/kgs/9NyRqEq" class="link link-primary" target="_blank">And 50+ reviews</a>
+        </p>
+    </div>
+    <div id="sticky-banner" tabindex="-1"
+        class="fixed top-0 start-0 z-50 justify-between w-full p-4 border-b bg-primary hidden">
+        <div class="flex items-center mx-auto">
+            <p class="flex items-center text-xs md:text-lg font-bold text-white">
+                <span
+                    class="inline-flex p-1 me-3 bg-secondary rounded-full w-6 h-6 items-center justify-center flex-shrink-0">
+                    <svg class="w-3 h-3 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 18 19">
+                        <path
+                            d="M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z" />
+                    </svg>
+                    <span class="sr-only">Light bulb</span>
+                </span>
+                <span>Contact Us +91 86070 50507 or
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSevmnsOejrHR-9r5wLwplQEbUauCk_QccxIH0_GN9y1H9OTWA/viewform"
+                        class="inline font-medium text-blue-300 underline underline-offset-2 decoration-600 dark:decoration-500 decoration-solid hover:no-underline"
+                        target="_blank">Book Appointment
+                    </a></span>
+            </p>
+        </div>
+        <div class="flex items-center">
+            <button data-dismiss-target="#sticky-banner" type="button"
+                class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-white hover:bg-secondary rounded-lg text-sm p-1.5">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close banner</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="overflow-x-hidden">
+        <div class="text-center my-7">
+            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-primary">
+                About Us
+            </h1>
+        </div>
+        <div class="hero bg-base-200" id="first-team">
+            <div class="hero-content flex-col lg:flex-row">
+                <img src="./assets/drrajan.jpeg"
+                    class="max-w-xs sm:max-w-sm lg:max-w-sm rounded-lg shadow-2xl animate-meimg1" />
+                <div>
+                    <h1
+                        class="mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-primary">
+                        Dr. Rajan Arya
+                    </h1>
+                    <p class="py-6 text-secondary animate-mep1">
+                        Dr. Rajan Arya is a highly esteemed practitioner in the field of
+                        Ayurveda, with a profound commitment to restoring health through
+                        natural remedies and holistic care. Holding a Bachelor of
+                        Ayurvedic Medicine and Surgery (BAMS), along with qualifications
+                        in Family Medicine (FMC) and a Post Graduate Diploma in Emergency
+                        Medical Services (PGDEMS), Dr. Arya combines traditional Ayurvedic
+                        principles with modern medical expertise. With years of
+                        experience, he has successfully treated numerous patients,
+                        offering personalized care and comprehensive wellness solutions.
+                        Driven by a passion for healing and a deep understanding of
+                        Ayurvedic philosophy, Dr. Arya continues to positively impact
+                        lives through his practice.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hero bg-base-200">
+            <div class="hero-content flex-col lg:flex-row">
+                <img src="./assets/draayushi.jpeg"
+                    class="max-w-xs sm:max-w-sm lg:max-w-sm rounded-lg shadow-2xl animate-meimg" />
+                <div>
+                    <h1
+                        class="mb-4 text-3xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl text-primary">
+                        Dr. Ayushi Bhardwaj
+                    </h1>
+                    <p class="py-6 text-secondary animate-mep">
+                        Dr. Ayushi, a skilled Ayurvedic practitioner with expertise in
+                        BAMS, PGDCC, and D-Panchkarma, blends traditional wisdom with
+                        modern clinical insights. Specializing in clinical cardiology and
+                        Panchkarma therapies, she offers personalized health solutions
+                        rooted in Ayurvedic principles. Dr. Ayushi emphasizes holistic
+                        care through natural remedies, lifestyle adjustments, and
+                        therapeutic techniques. Her compassionate approach and
+                        patient-centered philosophy empower individuals to make informed
+                        health choices. Dedicated to restoring balance and vitality, she
+                        guides her patients on a path to wellness, integrating herbal
+                        medicines and dietary modifications for comprehensive health
+                        management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-center bg-primary text-primary-content p-10 lg:text-lg xl:text-lg" id="enquiry-footer">
+        <aside>
+            <p class="font-bold">
+                Varnya Wellness
+                <br />
+                Providing reliable treatments since 2023
+            </p>
+            <p>
+                <a href="https://www.google.com/maps/place/VARNYA+-+Best+Skin+Clinic,+Hair,+Aesthetic+Clinic+%7C+Ayurveda+Clinic,+Panchkarma+Center+in+Gurgaon/@28.4406629,77.0544667,17z/data=!3m1!4b1!4m6!3m5!1s0x390d19cd0886c203:0xec662c6a014fa6f8!8m2!3d28.4406629!4d77.0544667!16s%2Fg%2F11txmdj9rc?entry=ttu"
+                    class="link" target="_blank">Address:- 763-P,1st floor , sector 39 ,gurugram</a>
+            </p>
+            <p>Contact:- +91 86070 50507</p>
+            <p>Copyright © <span id="current-year"></span> - All right reserved</p>
+        </aside>
+        <nav>
+            <p>Website Developed By: Sahil Jalandhara</p>
+        </nav>
+        <div></div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
